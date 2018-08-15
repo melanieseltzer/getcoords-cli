@@ -12,7 +12,7 @@ $ npm install -g getcoords-cli
 
 ## API Key
 
-In order to use the package, you must first obtain a Google API key and set `process.env.GOOGLE_GEOCOORDS_API_KEY` in your shell initialization file. Please visit the [dev docs](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) for instruction on how to obtain the key, and this [Stack Exchange answer](https://unix.stackexchange.com/a/21600) for instruction on how to add it to your shell.
+In order to use the package globally, you must first obtain a Google API key and set `process.env.GOOGLE_GEOCOORDS_API_KEY` in your shell initialization file. Please visit the [dev docs](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) for instruction on how to obtain the key, and this [Stack Exchange answer](https://unix.stackexchange.com/a/21600) for instruction on how to add it to your shell.
 
 ## Usage
 
