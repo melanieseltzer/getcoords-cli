@@ -18,7 +18,9 @@
 	},
 	"scripts": {
 		"lint": "eslint cli.js",
-		"build": "npm run lint && babel ./cli.js -d ./lib"
+		"test": "ava",
+		"test:watch": "ava --verbose --watch",
+		"build": "npm run lint && npm run test && babel ./cli.js -d ./lib"
 	},
 	"files": [
 		"lib/cli.js"
@@ -38,12 +40,14 @@
 		"@babel/cli": "^7.0.0-rc.1",
 		"@babel/core": "^7.0.0-rc.1",
 		"@babel/preset-env": "^7.0.0-rc.1",
+		"ava": "^0.25.0",
 		"babel-eslint": "^9.0.0-beta.3",
 		"eslint": "^5.3.0",
 		"eslint-config-airbnb-base": "^13.1.0",
 		"eslint-config-prettier": "^3.0.1",
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-prettier": "^2.6.2",
-		"prettier": "^1.14.2"
+		"prettier": "^1.14.2",
+		"sinon": "^6.1.5"
 	}
 }
