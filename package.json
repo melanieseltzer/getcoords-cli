@@ -36,7 +36,7 @@
 	"dependencies": {
 		"@babel/polyfill": "^7.0.0-rc.1",
 		"chalk": "^2.4.1",
-		"getcoords": "^1.0.3",
+		"getcoords": "^1.0.4",
 		"meow": "^5.0.0"
 	},
 	"devDependencies": {
