@@ -20,7 +20,8 @@
 		"lint": "eslint cli.js",
 		"test": "ava",
 		"test:watch": "ava --verbose --watch",
-		"build": "npm run lint && npm run test && babel ./cli.js -d ./lib"
+		"build": "npm run lint && npm run test && babel ./cli.js -d ./lib",
+		"prepare": "npm run build"
 	},
 	"files": [
 		"lib/cli.js"
@@ -33,6 +34,7 @@
 		"latlong"
 	],
 	"dependencies": {
+		"@babel/polyfill": "^7.0.0-rc.1",
 		"chalk": "^2.4.1",
 		"getcoords": "^1.0.3",
 		"meow": "^5.0.0"
@@ -40,7 +42,6 @@
 	"devDependencies": {
 		"@babel/cli": "^7.0.0-rc.1",
 		"@babel/core": "^7.0.0-rc.1",
-		"@babel/polyfill": "^7.0.0-rc.1",
 		"@babel/preset-env": "^7.0.0-rc.1",
 		"@babel/register": "^7.0.0-rc.1",
 		"ava": "^0.25.0",
