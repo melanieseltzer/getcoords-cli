@@ -10,6 +10,15 @@
 $ npm install -g getcoords-cli
 ```
 
+## Local Installation
+
+`getcoords-cli` is intended to be installed globally and run anywhere, but you can also install it locally in a project and use [npx](https://www.npmjs.com/package/npx) to execute commands, if you want.
+
+```
+$ npm install getcoords-cli
+$ npx getcoords "..."
+```
+
 ## API Key
 
 In order to use the package globally, you must first obtain a Google API key and set `process.env.GOOGLE_GEOCOORDS_API_KEY` in your shell initialization file. Please visit the [dev docs](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) for instruction on how to obtain the key, and this [Stack Exchange answer](https://unix.stackexchange.com/a/21600) for instruction on how to add it to your shell.
