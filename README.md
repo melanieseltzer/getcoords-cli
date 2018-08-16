@@ -22,8 +22,8 @@ $ getcoords --help
   Usage
     getcoords [address]
 
-	Options
-	  --version Outputs the version
+  Options
+    --version Outputs the version
 
   Examples
     $ getcoords "Los Angeles, CA"
