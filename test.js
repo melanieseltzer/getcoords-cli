@@ -8,8 +8,10 @@ test('shell command fails if api key not set', async t => {
   sandbox.stub(process, 'env').value({ GOOGLE_GEOCOORDS_API_KEY: '' });
 
   try {
+    execa.shell('babel ./cli.js -d ./lib');
     await execa.shell('node ./lib/cli.js "Los Angeles 90034"');
   } catch (error) {
+    console.log(error);
     t.is(error.failed, true);
     t.is(error.stdout, 'Cannot find Google api key.\n');
   }
@@ -20,8 +22,10 @@ test('shell command fails if no address input', async t => {
   sandbox.stub(process, 'env').value({ GOOGLE_GEOCOORDS_API_KEY: '1234' });
 
   try {
+    execa.shell('babel ./cli.js -d ./lib');
     await execa.shell('node ./lib/cli.js');
   } catch (error) {
+    console.log(error);
     t.is(error.failed, true);
     t.is(error.stdout, 'Please enter an address.\n');
   }

@@ -1,16 +1,3 @@
 language: node_js
 node_js:
-  - '10'
   - '8'
-deploy:
-  skip_cleanup: true
-  provider: npm
-  email: melleh11@gmail.com
-  api_key:
-    secure: hiwiHs8/IPBkAulPTmt/dKAC9fBRA5pmjZ3/D0zRRaVwH+gEylYgbpGi4LczrxJy5l9mFCS5lEe9c3v0NAbXYGyU6MMxkQbPihibh7/4X7DC4dVXjfyPjirooVEG1dQbrVHIPCvoOQuPJk6NvPSnuOP+2VOUcOnA4C6xZ9NpNaFd4dbb7iwcAznbd61X/NH/d0mFY10rNXfqbBHySZFcw4/wzujel+Yqj138C+bRciHCXU0fyES3Wsc+f4khnwLKgDDPC5teT6jEM0HVPbWPbNfYu8oP3AgW55td7lyIm2UInOkSB9QmJqNsE92OJchv3vF1eOMGNhxW6jYJddf2M0r3lZFGE0PFXVrj7AIUeCk7sUr+hzm+9s616h8vz9pb/jcF7lEMJueUVMKYuCXmN9/Os7shvrD1KnXnxQKnzerJZU1o/Qt6lfjHT9faNhPgKcUfTJeHjiIDcFQBtuM7t0lDuOmz1f1OLAHCctqzG/bY8c2Viq2PL7wu59YLKw9R638V2xxCc0gdggp+HN4H9eAyyoTjxuVRIcba4lAix5czeRVSaj9MdjpL2dLFf0Cvt76DylplAEUQMHbhkwysEhppdl4SfuIWV17W5fdTvQdELgueMave7YyPT7+1BpcJdc46iEZlkH/hkOgS4bpc3YrnQhJeBJtgwW8Fft41nmU=
-  on:
-    tags: true
-    repo: melanieseltzer/getcoords-cli
-branches:
-  only: 
-    - master
