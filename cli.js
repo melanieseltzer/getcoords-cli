@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import chalk from 'chalk';
-import meow from 'meow';
-import getCoords from 'getcoords';
+const chalk = require('chalk');
+const meow = require('meow');
+const getCoords = require('getcoords');
 
 const cli = meow(`
 	Usage
