@@ -1,4 +1,4 @@
-# 🌐 getcoords-cli [![npm](https://img.shields.io/badge/npm-v1.0.0-blue.svg)](https://www.npmjs.com/package/getcoords-cli) [![Build Status](https://travis-ci.org/melanieseltzer/getcoords-cli.svg?branch=master)](https://travis-ci.org/melanieseltzer/getcoords-cli) [![Known Vulnerabilities](https://snyk.io/test/github/melanieseltzer/getcoords-cli/badge.svg)](https://snyk.io/test/github/melanieseltzer/getcoords-cli)
+# 🌐 getcoords-cli [![npm](https://img.shields.io/badge/npm-v1.0.4-blue.svg)](https://www.npmjs.com/package/getcoords-cli) [![Build Status](https://travis-ci.org/melanieseltzer/getcoords-cli.svg?branch=master)](https://travis-ci.org/melanieseltzer/getcoords-cli) [![Known Vulnerabilities](https://snyk.io/test/github/melanieseltzer/getcoords-cli/badge.svg)](https://snyk.io/test/github/melanieseltzer/getcoords-cli)
 
 > Get lat and long coordinates from any address, in your terminal
 
@@ -21,6 +21,9 @@ $ getcoords --help
 
   Usage
     getcoords [address]
+
+	Options
+	  --version Outputs the version
 
   Examples
     $ getcoords "Los Angeles, CA"

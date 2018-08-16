@@ -8,6 +8,9 @@ const cli = meow(`
 	Usage
 	  $ getcoords "[address]"
 
+	Options
+	  --version Outputs the version
+
 	Examples
 	  $ getcoords "Los Angeles, CA"
 	  34.0522342 -118.2436849
