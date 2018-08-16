@@ -1,6 +1,6 @@
 {
 	"name": "getcoords-cli",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Get lat and long coordinates from any address, right in your terminal.",
 	"license": "MIT",
 	"repository": "https://github.com/melanieseltzer/getcoords-cli",
