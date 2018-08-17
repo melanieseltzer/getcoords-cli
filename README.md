@@ -12,11 +12,32 @@ $ npm install -g getcoords-cli
 
 ## Local Installation
 
-`getcoords-cli` is intended to be installed globally and run anywhere, but you can also install it locally in a project and use [npx](https://www.npmjs.com/package/npx) to execute commands, if you want.
+`getcoords-cli` is intended to be installed globally and run anywhere, but you can also install it locally in a project. Note that if you do this, you will only be able to run commands inside your local project directory.
+
+With [npx](https://www.npmjs.com/package/npx):
 
 ```
+$ cd path/to/your/project
 $ npm install getcoords-cli
 $ npx getcoords "..."
+```
+
+Or, with npm scripts:
+
+```
+$ cd path/to/your/project
+$ npm install getcoords-cli
+```
+
+```
+// in package.json
+"scripts": {
+  "getcoords": "./node_modules/.bin/getcoords"
+}
+```
+
+```
+$ npm run getcoords "..."
 ```
 
 ## API Key
