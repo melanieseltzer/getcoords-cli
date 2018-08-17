@@ -22,7 +22,7 @@
 		"test:watch": "ava --verbose --watch",
 		"build": "npm run lint && npm run test && babel ./cli.js -d ./lib",
 		"prepublishOnly": "npm run build",
-		"getcoords": "node ./cli.js"
+		"getcoords": "node ./cli_npm.js"
 	},
 	"files": [
 		"lib/cli.js"
