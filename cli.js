@@ -22,27 +22,15 @@ const cli = meow(`
 // Capture the user input
 const { input } = cli;
 
-// If there's no global key then exit early
-if (!process.env.GOOGLE_GEOCOORDS_API_KEY) {
-  console.log(chalk.red('Cannot find Google api key.'));
-  process.exit(1);
-}
-
-// If there's no input then also exit early
-if (input.length === 0) {
-  console.log(chalk.red('Please enter an address.'));
-  process.exit(1);
-}
-
 (async () => {
   try {
     // Get the coordinates from the resolved request
-    // using the inputted address
+    // using the input address
     const coords = await getCoords(input[0]);
     const { lat, lng } = coords;
     console.log(chalk.green(lat, lng));
   } catch (error) {
-    // Handle errors other than no key/address
-    console.error(chalk.red('Oops! Something went wrong.'));
+    console.log(chalk.red(error));
+    process.exit(1);
   }
 })();

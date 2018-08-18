@@ -11,7 +11,7 @@ test('shell command fails if api key not set', async t => {
     await execa.shell('node ./cli.js "Los Angeles 90034"');
   } catch (error) {
     t.is(error.failed, true);
-    t.is(error.stdout, 'Cannot find Google api key.\n');
+    t.is(error.stdout, 'Error: Cannot find Google api key.\n');
   }
 });
 
@@ -23,7 +23,7 @@ test('shell command fails if no address input', async t => {
     await execa.shell('node ./cli.js');
   } catch (error) {
     t.is(error.failed, true);
-    t.is(error.stdout, 'Please enter an address.\n');
+    t.is(error.stdout, 'Error: Please enter an address.\n');
   }
 });
 
